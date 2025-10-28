@@ -1,0 +1,18 @@
+   .navbar-brand img {
+     height: 80px;
+     width: auto;
+     margin: 0px 10px -25px 0px;
+   }
+
+   .nav-link {
+     font-size: 1.1rem;
+   }
+
+   .card-header {
+     min-height: 70px;
+     text-align: left;
+   }
+
+   body {
+     background-image: url("../media/background.png");
+   }
