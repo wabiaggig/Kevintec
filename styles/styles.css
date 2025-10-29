@@ -21,14 +21,6 @@
 
    }
 
-   #banner-prom {
-     background-color: #ffffffcc;
-     background-image: url("../media/nosotros/unnamed.jpg");
-     background-size: auto;
-     width: 1090px;
-     background-color: rgba(0, 0, 0, 0.5);
-   }
-
    main {
      flex: 1;
    }
