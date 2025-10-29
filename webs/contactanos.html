@@ -22,7 +22,7 @@
                         <strong>Especialidad:</strong> No hace nada, solo manda.
                     </p>
 
-                    <p class="card-text mb-4" >
+                    <p class="card-text mb-4">
                         <a href="mailto:kevin.mauricio@kevintec.pe" class="btn btn-sm btn-outline-secondary ">
                             <i class="bi bi-envelope"></i> kevin.mauricio@kevintec.pe
                         </a>
@@ -150,6 +150,45 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h3 class="text-center mb-3">📩 Mensajes de Emergencia (o Consulta)</h3>
+        <p class="text-center lead mb-4">
+            Si tu problema no es lo suficientemente crítico para molestar a Kevin (el que manda),
+            déjanos tu
+            consulta aquí.
+            <br><strong>Advertencia:</strong> Revisa tu carpeta de SPAM, ahí es donde mandamos las respuestas a
+            las preguntas
+            obvias.
+        </p>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form action="/enviar-mensaje" method="POST">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Tu Nombre (o alias)</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email (para enviarte la factura)</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto (Sé vago, nos gusta adivinar)</label>
+                        <input type="text" class="form-control" id="asunto" name="asunto" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Tu Problema (Explícanos por qué "se dañó solo")</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            Enviar Mensaje y Esperar el Reinicio
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

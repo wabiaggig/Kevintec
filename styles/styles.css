@@ -15,6 +15,10 @@
 
    body {
      background-image: url("../media/background.png");
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+
    }
 
    #banner-prom {
@@ -23,6 +27,10 @@
      background-size: auto;
      width: 1090px;
      background-color: rgba(0, 0, 0, 0.5);
+   }
+
+   main {
+     flex: 1;
    }
 
    .accordion-dark {
@@ -63,4 +71,15 @@
 
      --bs-accordion-active-bg: #f8f9fa;
      --bs-accordion-active-color: #000000
+   }
+
+   .texto p {
+     font-size: medium;
+   }
+
+   .service-img-fixed {
+     height: 180px;
+     /* Ajusta esta altura al valor que desees */
+     object-fit: cover;
+     /* Asegura que la imagen cubra el espacio sin distorsionarse */
    }

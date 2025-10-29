@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
             addDynamicLinkListeners();
             // Actualiza el estado activo del navbar
             updateActiveLink(url);
+            // Mueve el scroll arriba
+            window.scrollTo({ top: 0, behavior: 'smooth' });
 
         } catch (error) {
             // Si algo falla (ej. no hay conexión, error 404)
