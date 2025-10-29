@@ -16,3 +16,51 @@
    body {
      background-image: url("../media/background.png");
    }
+
+   #banner-prom {
+     background-color: #ffffffcc;
+     background-image: url("../media/nosotros/unnamed.jpg");
+     background-size: auto;
+     width: 1090px;
+     background-color: rgba(0, 0, 0, 0.5);
+   }
+
+   .accordion-dark {
+     /* Color de fondo del contenido (body) */
+     --bs-accordion-bg: #9b9b9b;
+     /* Un gris oscuro (bg-dark) */
+
+     /* Color del texto del contenido (body) */
+     --bs-accordion-color: #000000;
+     /* Un blanco (text-light) */
+
+     /* Color del borde entre items */
+     --bs-accordion-border-color: rgba(0, 0, 0, 0.125);
+
+     /* --- Colores del Botón --- */
+
+     /* Color del texto del botón (cerrado) */
+     --bs-accordion-button-color: #c7c7c7;
+
+     /* Color de fondo del botón (cerrado) */
+     --bs-accordion-button-bg: #666666;
+     /* Un gris un poco más claro */
+
+     /* Color del icono (+/-) */
+     --bs-accordion-icon-color: #1e1f20;
+
+     /* --- Colores del Botón (Abierto/Activo) --- */
+
+     /* Color del texto del botón (abierto) */
+     --bs-accordion-button-active-color: #000000;
+
+     /* Color de fondo del botón (abierto) */
+     --bs-accordion-button-active-bg: #696969;
+     /* Azul primary de Bootstrap */
+
+     /* Color del icono (+/-) (abierto) */
+     --bs-accordion-icon-active-color: #f8f9fa;
+
+     --bs-accordion-active-bg: #f8f9fa;
+     --bs-accordion-active-color: #000000
+   }
