@@ -76,11 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ---Cargar la página de inicio por defecto ---
     // Al cargar la web, mostramos 'home.html' automáticamente
-    loadContent('./webs/home.html');
+    loadContent('webs/home.html');
 
     // --- 3. Añadir "Listeners" a los enlaces del Navbar ---
     // Selecciona TODOS los enlaces (<a class="nav-link">) dentro del menú
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    document.querySelectorAll('.navbar-nav .nav-link .foot-link').forEach(link => {
         
         // Por cada enlace, añade un "detector de clics"
         link.addEventListener('click', (event) => {
@@ -98,5 +98,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    
+document.querySelectorAll('footer .list-unstyled a').forEach(link => {
+        
+        // Añade un "detector de clics" a cada uno
+        link.addEventListener('click', (event) => {
+            
+            // Evita que el enlace recargue la página
+            event.preventDefault(); 
+            
+            // Obtiene la URL del atributo href
+            const pageUrl = event.target.getAttribute('href');
 
+            // Llama a la función para cargar el contenido
+            if (pageUrl) {
+                loadContent(pageUrl);
+            }
+        });
+    });
 });
